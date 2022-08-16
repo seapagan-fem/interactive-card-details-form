@@ -1,0 +1,27 @@
+/* ------------------------------- some resets ------------------------------ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+.hidden-label {
+  position: absolute;
+  left: -9999em;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}

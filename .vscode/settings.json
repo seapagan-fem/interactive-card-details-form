@@ -1,0 +1,6 @@
+{
+  "liveSassCompile.settings.generateMap": false,
+  "liveSassCompile.settings.showOutputWindowOn": "Warning",
+  "liveSassCompile.settings.autoprefix": true,
+  "liveSassCompile.settings.watchOnLaunch": true
+}
