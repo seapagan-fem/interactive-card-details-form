@@ -1,4 +1,4 @@
-/* ------------------------------- some resets ------------------------------ */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
 *,
 *::before,
 *::after {
@@ -8,6 +8,53 @@
   box-sizing: border-box;
 }
 
+:root {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  color: hsl(278deg, 68%, 11%);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 0 24px;
+}
+.form label {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  display: flex;
+  flex-direction: column;
+}
+.form input {
+  font-size: 1.8rem;
+  appearance: none;
+  outline: none;
+  border: 1px solid hsl(270deg, 3%, 87%);
+  border-radius: 8px;
+  padding: 11px 16px;
+  margin-top: 9px;
+}
+.form input::placeholder {
+  color: hsl(279deg, 6%, 55%);
+}
+
+.bottom-fields {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 8px;
+}
+.bottom-fields .expiry-inputs {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+}
+
 .hidden {
   display: none;
 }
@@ -15,6 +62,14 @@
 .hidden-label {
   position: absolute;
   left: -9999em;
+}
+
+button {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(278deg, 68%, 11%);
+  border: none;
+  border-radius: 8px;
+  padding: 15px;
 }
 
 .attribution {

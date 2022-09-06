@@ -16,7 +16,7 @@
   </head>
   <body>
     <main>
-      <section class="cards">
+      <section class="cards hidden">
         <div class="card-back">000</div>
         <div class="card-front">
           <img src="images/card-logo.svg" alt="" />
@@ -26,29 +26,42 @@
         </div>
       </section>
       <section class="form">
-        <label for="name">Cardholder Name</label
-        ><input
-          id="name"
-          name="name"
-          type="text"
-          placeholder="e.g. Jane Appleseed"
-        />
-        <label for="number">Card Number</label
-        ><input
-          name="number"
-          id="number"
-          type="text"
-          placeholder="e.g. 1234 5678 9123 0000"
-        />
-        <fieldset>
-          <legend>Exp. Date (MM/YY</legend>
-          <label class="hidden-label" for="exp-month">Expiry Month</label>
-          <input id="exp-month" name="exp-month" type="text" placeholder="MM" />
-          <label class="hidden-label" for="exp-year">Expiry Year</label>
-          <input id="exp-year" name="exp-year" type="text" placeholder="YY" />
-        </fieldset>
-        <label for="cvc">CVC</label
-        ><input name="cvc" id="cvc" type="text" placeholder="e.g. 123 " />
+        <label
+          >Cardholder Name
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="e.g. Jane Appleseed"
+          />
+        </label>
+        <label
+          >Card Number
+          <input
+            name="number"
+            id="number"
+            type="text"
+            placeholder="e.g. 1234 5678 9123 0000"
+          />
+        </label>
+        <div class="bottom-fields">
+          <div class="expiry-inputs">
+            <div class="expiry-label">Exp. Date (MM/YY</div>
+            <label class="hidden-label" for="exp-month">Expiry Month</label>
+            <input
+              id="exp-month"
+              name="exp-month"
+              type="text"
+              placeholder="MM"
+            />
+            <label class="hidden-label" for="exp-year">Expiry Year</label>
+            <input id="exp-year" name="exp-year" type="text" placeholder="YY" />
+          </div>
+          <label
+            >CVC
+            <input name="cvc" id="cvc" type="text" placeholder="e.g. 123 " />
+          </label>
+        </div>
         <button type="submit">Confirm</button>
       </section>
       <!-- Completed state start -->
